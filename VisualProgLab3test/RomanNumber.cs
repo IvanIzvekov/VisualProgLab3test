@@ -10,7 +10,7 @@ namespace VisualProgLab3test
 
         public RomanNumber(ushort n)
         {
-            if (n <= 0)
+            if (n <= 0 || n >= 4000)
             {
                 throw new ArgumentOutOfRangeException("Ошибка использования значения 0");
             }
